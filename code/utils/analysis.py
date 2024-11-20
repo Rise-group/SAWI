@@ -73,22 +73,6 @@ def create_links(gdf:gpd.GeoDataFrame, elev:bool, crs='epsg:4326'):
     
     return gdf
 
-# def get_links_grade(nodes, nearest, links, elevation_name='elevation'):
-#     '''
-    
-#     '''
-#     links['grade_abs'] = ''
-#     # Calculate the grade as the slope of a line
-#     for ilinks in links.index:
-#         elevation_O = nodes.loc[ilinks,elevation_name]
-#         elevation_D = nearest.loc[ilinks,elevation_name]
-#         length = links.loc[ilinks,'length']
-#         grade = (elevation_D-elevation_O)/length
-#         links.loc[ilinks,'grade_abs'] = np.absolute(np.round(grade,4))
-
-#     links = links.reset_index()
-
-#     return links
 
 def get_links_grade(links, from_gdf, to_gdf):
     '''
@@ -105,9 +89,8 @@ def get_links_grade(links, from_gdf, to_gdf):
         grade = (elevation_D-elevation_O)/length
         links.loc[ilinks,'grade_abs'] = np.absolute(np.round(grade,4))
 
-    # links = links.reset_index()
-
     return links
+
 
 def assign_walk_speed_Naismith_Langmuir(gdf:gpd.GeoDataFrame, units='m/s'):
     '''
