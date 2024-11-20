@@ -181,7 +181,7 @@ def organize_edges(edges):
     edges['Type'] = 'network'
     edges[['ID', 'from', 'to']] = edges[['ID', 'from', 'to']].astype(str).apply(lambda x: x.str.split('.').str[0])
     
-    return edges[['ID', 'from', 'to', 'length', 'grade_abs', 'speed', 'time', 'Type', 'geometry']]
+    return edges[['ID', 'from', 'to', 'length', 'grade_abs', 'speed', 'weight', 'Type', 'geometry']]
 
 
 def organize_origins(origins):
@@ -207,7 +207,7 @@ def organize_origins_links(origins_links):
     origins_links['ID'] = origins_links['from']
     origins_links['Type'] = 'origin'
     # Organize the gdf
-    origins_links = origins_links[['ID','from','to','length','grade_abs','speed','time','Type','geometry']]
+    origins_links = origins_links[['ID','from','to','length','grade_abs','speed','weight','Type','geometry']]
 
     # # Transform 'from' and 'to' columns into str
     # origins_links['to'] = origins_links['to'].astype(str)
@@ -279,7 +279,7 @@ def organize_destinations_links(destinations_links, destinations):
     destinations_links = destinations_links.set_index('from').merge(destinations[['ID','Type']].set_index('ID'), left_index=True, right_index=True, how='left').reset_index()
     # Organize the gdf
     # destinations_links = destinations_links.rename(columns={'osmid':'to'})
-    destinations_links = destinations_links[['ID','from','to','length','grade_abs','speed','time','Type','geometry']]
+    destinations_links = destinations_links[['ID','from','to','length','grade_abs','speed','weight','Type','geometry']]
 
     # # Transform 'from' and 'to' columns into str
     # destinations_links['to'] = destinations_links['to'].astype(str)
