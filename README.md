@@ -1,15 +1,14 @@
-<!-- <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-  <img src="code/img/Logo_RiSE_EAFIT.png" alt="RiSE-group logo" width="325" height="50">
-  <img src="code/img/Logo_GIZ.png" alt="PEAK Urban logo" width="180" height="50">
-</div> -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+  <img src="code/img/Logo_RiSE_EAFIT.png" alt="RiSE-group logo" width="650" height="100">
+  <img src="code/img/Logo_GIZ.png" alt="PEAK Urban logo" width="360" height="100">
+</div>
 <!-- <div>
   <img src="code/img/Logo_RiSE_EAFIT.png" alt="RiSE-group logo" align="left" width="325" height="50">
   <img src="code/img/Logo_GIZ.png" alt="PEAK Urban logo" align="right" width="180" height="50">
 </div>
 <div style="clear: both;"></div> -->
-<img src="code/img/Logo_RiSE_EAFIT.png" alt="PEAK Urban logo" align="left" width ="325" height="50">
-
-<img src="code/img/Logo_GIZ.png" alt="RiSE-group logo" align="right" width ="180" height="50">
+<!-- <img src="code/img/Logo_RiSE_EAFIT.png" alt="PEAK Urban logo" align="left" width ="325" height="50"> -->
+<!-- <img src="code/img/Logo_GIZ.png" alt="RiSE-group logo" align="right" width ="180" height="50"> -->
 
 
 # Assessment of Simultaneous Accessibility Walking Index (SAWI) to essential opportunities
