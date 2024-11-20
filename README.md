@@ -1,6 +1,6 @@
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-  <img src="code/img/Logo_RiSE_EAFIT.png" alt="RiSE-group logo" width="650" height="100">
-  <img src="code/img/Logo_GIZ.png" alt="PEAK Urban logo" width="360" height="100">
+  <img src="code/img/Logo_RiSE_EAFIT.png" alt="RiSE-group logo" width="487.5" height="75">
+  <img src="code/img/Logo_GIZ.png" alt="PEAK Urban logo" width="270" height="75">
 </div>
 <!-- <div>
   <img src="code/img/Logo_RiSE_EAFIT.png" alt="RiSE-group logo" align="left" width="325" height="50">
